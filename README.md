@@ -1,9 +1,107 @@
-# Smartphone & Mental Health Analysis
+# 🧠 Smartphone Mental Health Analysis
 
-This project analyzes smartphone usage impact on mental health using machine learning. Based on survey data, it explores correlations between screen time, notifications, sleep quality, and mental wellbeing.
+> Machine learning analysis of smartphone behavioral data to detect patterns associated with mental well-being variations.
 
-The analysis includes data preprocessing, exploratory analysis, and predictive modeling. Implemented algorithms: Logistic Regression, LDA, and Random Forest, achieving 70% accuracy and R²=0.89.
+---
 
-Key findings show significant relationships between screen time and sleep quality, notification frequency and anxiety levels. Digital wellness features demonstrate positive effects on mental health.
+## 📌 Overview
 
-Perfect example of data science applied to behavioral health research.
+This project investigates the relationship between smartphone usage patterns and mental health indicators. Through exploratory data analysis and multiple ML models, it identifies behavioral signals that correlate with mental state variations.
+
+---
+
+## 🔬 Research Question
+
+> *Can smartphone behavioral data (screen time, app usage, notifications, etc.) predict mental well-being indicators?*
+
+---
+
+## 📊 Methodology
+
+```
+Raw Data (Smartphone Behavioral Metrics)
+         │
+         ▼
+┌─────────────────────┐
+│  EDA & Visualization│  ← Distribution, correlations, outliers
+└──────────┬──────────┘
+           │
+┌──────────▼──────────┐
+│ Feature Engineering │  ← Selection, encoding, scaling
+└──────────┬──────────┘
+           │
+┌──────────▼──────────┐
+│   Model Training    │  ← Multiple algorithms compared
+│  • Logistic Reg.    │
+│  • Random Forest    │
+│  • SVM              │
+│  • KNN              │
+│  • XGBoost          │
+└──────────┬──────────┘
+           │
+┌──────────▼──────────┐
+│ Evaluation & Report │  ← Accuracy, F1, confusion matrix
+└─────────────────────┘
+```
+
+---
+
+## 📈 Key Findings
+
+- Identified top behavioral features most correlated with mental well-being
+- Compared performance of 5+ supervised ML models
+- Applied feature selection to reduce dimensionality
+- Evaluated using cross-validation to ensure generalization
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python 3.x
+- **ML**: Scikit-learn, XGBoost
+- **Analysis**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Environment**: Jupyter Notebook
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/yassintb20/smartphone-mental-health-analysis.git
+cd smartphone-mental-health-analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Open the notebook
+jupyter notebook analysis.ipynb
+```
+
+---
+
+## 📁 Project Structure
+
+```
+smartphone-mental-health-analysis/
+├── data/
+│   └── smartphone_data.csv    # Dataset
+├── notebooks/
+│   ├── 01_EDA.ipynb           # Exploratory analysis
+│   ├── 02_preprocessing.ipynb # Feature engineering
+│   └── 03_modeling.ipynb      # Model training & evaluation
+├── src/
+│   ├── preprocessing.py
+│   └── models.py
+├── results/
+│   └── model_comparison.png   # Performance comparison chart
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 👤 Author
+
+**Taibi Mohamed Yassine** — [LinkedIn](https://linkedin.com/in/mohammed-yassin-taibi) · [GitHub](https://github.com/yassintb20)
